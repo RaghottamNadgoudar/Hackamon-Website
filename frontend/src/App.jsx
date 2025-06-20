@@ -44,7 +44,7 @@ const LandingPage = () => {
         backgroundImage: `url(${lightBackground})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'norepeat',
+        backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed'
       }}
     >
