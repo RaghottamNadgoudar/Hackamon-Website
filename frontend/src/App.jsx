@@ -195,20 +195,20 @@ const LandingPage = () => {
       <FadeInSection>
         {/* Event Details Section */}
         <section className="mx-auto px-6 py-16 max-w-6xl">
-          <div className="bg-white/10 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border border-white/20">
+          <div className="bg-white/10 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border-2 border-dashed border-white/20">
             <h2 className="text-5xl font-bold mb-12 text-center text-white drop-shadow-lg">Event Details</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white/20 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border border-white/20">
+              <div className="bg-white/20 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20">
                 <div className="text-6xl mb-4">📅</div>
                 <h3 className="text-2xl font-bold mb-3 text-white">Date</h3>
                 <p className="text-lg text-gray-200">August 15-17, 2025</p>
               </div>
-              <div className="bg-white/20 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border border-white/20">
+              <div className="bg-white/20 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20">
                 <div className="text-6xl mb-4">📍</div>
                 <h3 className="text-2xl font-bold mb-3 text-white">Venue</h3>
                 <p className="text-lg text-gray-200">College Auditorium</p>
               </div>
-              <div className="bg-white/20 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border border-white/20">
+              <div className="bg-white/20 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20">
                 <div className="text-6xl mb-4">🏆</div>
                 <h3 className="text-2xl font-bold mb-3 text-white">Prizes</h3>
                 <p className="text-lg text-gray-200">₹50,000 + Gadgets</p>
@@ -221,10 +221,10 @@ const LandingPage = () => {
       <FadeInSection>
         {/* Timeline Section - New Mobile Friendly Card */}
         <section className="mx-auto px-2 sm:px-6 py-10 sm:py-16 max-w-2xl">
-          <div className="bg-white/10 backdrop-blur-sm rounded-3xl shadow-2xl p-4 sm:p-8 border border-white/20">
+          <div className="bg-white/10 backdrop-blur-sm rounded-3xl shadow-2xl p-4 sm:p-8 border-2 border-dashed border-white/20">
             <h2 className="text-4xl sm:text-5xl font-bold mb-8 text-center text-white drop-shadow-lg">Schedule</h2>
             <div className="flex flex-col gap-6">
-              {/* Card 1 */}
+             
               <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-4 sm:p-6 border border-white/20 transition hover:scale-[1.02]">
                 <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full bg-yellow-400 text-gray-900 font-bold text-lg sm:text-xl">1</div>
                 <div className="flex-1">

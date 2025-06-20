@@ -91,3 +91,27 @@
   transform: none;
   animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
+
+/* Fully transparent and minimal scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(40,40,40,0.35); /* subtle thumb for usability */
+  border-radius: 8px;
+  border: 2px solid rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-track {
+  background: url('/assets/backg.jpg') center center/cover no-repeat fixed;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(40,40,40,0.35) transparent;
+}
+/* Firefox track background continuation */
+html {
+  background: url('/assets/backg.jpg') center center/cover no-repeat fixed;
+}
