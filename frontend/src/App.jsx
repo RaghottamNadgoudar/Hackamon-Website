@@ -55,7 +55,7 @@ const LandingPage = () => {
       <section className="relative flex items-center justify-center h-screen">
         <div className="absolute inset-0 "></div>
         <div className="text-center z-10 px-4">
-          <h1 className="text-6xl md:text-8xl font-extrabold text-white drop-shadow-2xl animate-pulse">
+          <h1 className="poke-title text-6xl md:text-8xl font-extrabold text-white drop-shadow-2xl animate-pulse">
             PokéHack 2025
           </h1>
           <p className="mt-4 text-2xl md:text-3xl text-white font-semibold drop-shadow-lg">
