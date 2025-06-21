@@ -247,23 +247,7 @@ const LandingPage = () => {
           </h2>
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl px-4'>
             {/* Faculty Advisor 1 */}
-            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-dashed hover:scale-105 transition duration-300" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-              <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '1.5rem' }}>
-                Dr. Padmashree T
-              </h3>
-              <p className='team-card-role text-white text-center text-sm mb-2' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 600 }}>
-                Associate Professor & Associate Dean-PG Studies, ISE<br/>Faculty Advisor for the Coding Club
-              </p>
-            </div>
-            {/* Faculty Advisor 2 */}
-            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-dashed hover:scale-105 transition duration-300" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-              <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '1.5rem' }}>
-                Dr. Sagar BM
-              </h3>
-              <p className='team-card-role text-white text-center text-sm mb-2' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 600 }}>
-                Dean Student Affairs<br/>Faculty Advisor for the Coding Club
-              </p>
-            </div>
+            
             {/* Student 1 */}
             <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-dashed hover:scale-105 transition duration-300" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
               <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '1.5rem' }}>
