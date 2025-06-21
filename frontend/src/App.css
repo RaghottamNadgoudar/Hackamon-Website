@@ -254,3 +254,60 @@ section.event-details-section, .event-details-section h2, .event-details-section
   font-family: 'Special Gothic Expanded One', 'Nunito', Arial, Helvetica, sans-serif !important;
   font-weight: 800;
 }
+
+.poke-title.shine {
+  font-size: 2.5rem;
+  font-family: 'Poke', sans-serif;
+  font-weight: bold;
+  color: #FFCB05;
+  -webkit-text-stroke: 2px #3b82f6;
+  text-shadow: 0 0 8px #3b82f6, 0 0 2px #3b82f6;
+  background: linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%) 0 0 no-repeat;
+  -webkit-background-size: 200px;
+  background-size: 200px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #FFCB05;
+  animation: shine 5s infinite linear;
+  position: relative;
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  .poke-title.shine {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 640px) {
+  .poke-title.shine {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .poke-title.shine {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .poke-title.shine {
+    font-size: 8rem;
+  }
+}
+@media (min-width: 1280px) {
+  .poke-title.shine {
+    font-size: 10rem;
+  }
+}
+@keyframes shine {
+  0%, 10% {
+    background-position: -1000px;
+  }
+  20% {
+    background-position: top left;
+  }
+  90% {
+    background-position: top right;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
