@@ -226,7 +226,7 @@ const LandingPage = () => {
             <h2 className="card-title text-4xl sm:text-5xl font-bold mb-10 text-center text-white drop-shadow-lg tracking-tight">Schedule</h2>
             <div className="flex flex-col gap-6">
               {/* Schedule Item 1 */}
-              <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-6 border border-dashed border-white/30 backdrop-blur-xl transition hover:scale-[1.03]">
+              <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-6 border border-dashed border-white/30 backdrop-blur-2xl bg-opacity-70 transition hover:scale-[1.03]">
                 <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full bg-yellow-400 text-gray-900 text-2xl shadow-lg">
                   <FaCalendarAlt />
                 </div>
@@ -236,7 +236,7 @@ const LandingPage = () => {
                 </div>
               </div>
               {/* Schedule Item 2 */}
-              <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-6 border border-dashed border-white/30 backdrop-blur-xl transition hover:scale-[1.03]">
+              <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-6 border border-dashed border-white/30 backdrop-blur-2xl bg-opacity-70 transition hover:scale-[1.03]">
                 <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full bg-pink-500 text-white text-2xl shadow-lg">
                   <FaMapMarkerAlt />
                 </div>
@@ -246,7 +246,7 @@ const LandingPage = () => {
                 </div>
               </div>
               {/* Schedule Item 3 */}
-              <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-6 border border-dashed border-white/30 backdrop-blur-xl transition hover:scale-[1.03]">
+              <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-6 border border-dashed border-white/30 backdrop-blur-2xl bg-opacity-70 transition hover:scale-[1.03]">
                 <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full bg-blue-500 text-white text-2xl shadow-lg">
                   <FaTrophy />
                 </div>
@@ -262,7 +262,7 @@ const LandingPage = () => {
 
       <FadeInSection>
         {/* Footer */}
-        <footer className="bg-gray-900/90 backdrop-blur-sm text-white py-12 mt-16 relative z-10">
+        <footer className=" backdrop-blur-sm text-white py-12 mt-16 relative z-10">
           <div className="mx-auto px-6 text-center">
             <h3 className="text-3xl font-bold mb-4">Ready to catch 'em all?</h3>
             <p className="text-xl mb-8">Join PokéHack 2025 and code your way to victory!</p>
