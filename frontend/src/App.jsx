@@ -286,22 +286,11 @@ const LandingPage = () => {
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-dashed flex flex-col transition duration-300 hover:scale-105" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
               <h3 className="text-2xl font-bold mb-3 text-yellow-300" style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif' }}>What You Can Expect</h3>
-              <ul className="text-white text-lg list-disc ml-5">
-                <li>Technical challenges: web security, AI/ML, blockchain, data science & more</li>
-                <li>Earn badges for each problem solved</li>
-                <li>Pokémon-themed clues to a mystery Pokémon</li>
-                <li>Custom participation certificates</li>
-                <li>Recognition, learning, and networking</li>
-              </ul>
+              <p className="text-white text-lg">You will face technical challenges in web security, AI/ML, blockchain, data science, and more. Earn badges for each problem solved, discover Pokémon-themed clues to a mystery Pokémon, receive custom participation certificates, and enjoy recognition, learning, and networking opportunities.</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-dashed flex flex-col transition duration-300 hover:scale-105" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
               <h3 className="text-2xl font-bold mb-3 text-yellow-300" style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif' }}>Perks for Participants</h3>
-              <ul className="text-white text-lg list-disc ml-5">
-                <li>Pokémon-themed Certificate</li>
-                <li>Shortlisting for finals based on performance</li>
-                <li>Peer engagement & recognition</li>
-                <li>Fun + technical learning</li>
-              </ul>
+              <p className="text-white text-lg">All participants will receive a Pokémon-themed certificate, have a chance to be shortlisted for finals based on performance, gain peer engagement and recognition, and experience a blend of fun and technical learning.</p>
             </div>
           </div>
         </section>
@@ -316,50 +305,42 @@ const LandingPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Contact Card 1 */}
             <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl p-6 border-2 border-dashed border-white/20 flex flex-col items-start" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-              <span className="text-xl text-white font-bold mb-3">Name Placeholder 1</span>
+              <span className="text-xl text-white font-bold mb-3">Sumukha Upadhaya</span>
               <div className="flex items-center gap-3 mb-2 bg-white/5 rounded-lg p-3 w-full">
-                <span className="text-2xl">📨</span>
-                <span className="text-lg text-white font-semibold">mail1@example.com</span>
+                <span className="text-lg text-white font-semibold">sumukhau.is24@rvce.edu.in</span>
               </div>
               <div className="flex items-center gap-3 bg-white/5 rounded-lg p-3 w-full">
-                <span className="text-2xl">📞</span>
-                <span className="text-lg text-white font-semibold">+91 90000 00001</span>
+                <span className="text-lg text-white font-semibold">+91 98440 29396</span>
               </div>
             </div>
             {/* Contact Card 2 */}
             <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl p-6 border-2 border-dashed border-white/20 flex flex-col items-start" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-              <span className="text-xl text-white font-bold mb-3">Name Placeholder 2</span>
+              <span className="text-xl text-white font-bold mb-3">GDL Pranav</span>
               <div className="flex items-center gap-3 mb-2 bg-white/5 rounded-lg p-3 w-full">
-                <span className="text-2xl">📨</span>
-                <span className="text-lg text-white font-semibold">mail2@example.com</span>
+                <span className="text-lg text-white font-semibold">gdpranavl.me24@rvce.edu.in</span>
               </div>
               <div className="flex items-center gap-3 bg-white/5 rounded-lg p-3 w-full">
-                <span className="text-2xl">📞</span>
-                <span className="text-lg text-white font-semibold">+91 90000 00002</span>
+                <span className="text-lg text-white font-semibold">+91 63615 23795</span>
               </div>
             </div>
             {/* Contact Card 3 */}
             <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl p-6 border-2 border-dashed border-white/20 flex flex-col items-start" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-              <span className="text-xl text-white font-bold mb-3">Name Placeholder 3</span>
+              <span className="text-xl text-white font-bold mb-3">Snehal Reddy Thadigotla</span>
               <div className="flex items-center gap-3 mb-2 bg-white/5 rounded-lg p-3 w-full">
-                <span className="text-2xl">📨</span>
-                <span className="text-lg text-white font-semibold">mail3@example.com</span>
+                <span className="text-lg text-white font-semibold">snehalreddyt.is24@rvce.edu.in</span>
               </div>
               <div className="flex items-center gap-3 bg-white/5 rounded-lg p-3 w-full">
-                <span className="text-2xl">📞</span>
-                <span className="text-lg text-white font-semibold">+91 90000 00003</span>
+                <span className="text-lg text-white font-semibold">+91 99165 77533</span>
               </div>
             </div>
             {/* Contact Card 4 */}
             <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl p-6 border-2 border-dashed border-white/20 flex flex-col items-start" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-              <span className="text-xl text-white font-bold mb-3">Name Placeholder 4</span>
+              <span className="text-xl text-white font-bold mb-3">Mantradi Shashwati Rao</span>
               <div className="flex items-center gap-3 mb-2 bg-white/5 rounded-lg p-3 w-full">
-                <span className="text-2xl">📨</span>
-                <span className="text-lg text-white font-semibold">mail4@example.com</span>
+                <span className="text-lg text-white font-semibold">mshashwatirao.cs24@rvce.edu.in</span>
               </div>
               <div className="flex items-center gap-3 bg-white/5 rounded-lg p-3 w-full">
-                <span className="text-2xl">📞</span>
-                <span className="text-lg text-white font-semibold">+91 90000 00004</span>
+                <span className="text-lg text-white font-semibold">+91 86180 69507</span>
               </div>
             </div>
           </div>
