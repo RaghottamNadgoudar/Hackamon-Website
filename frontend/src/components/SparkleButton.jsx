@@ -54,6 +54,14 @@ function SparkleButton({ children, className = '', onClick, ...props }) {
     setTimeout(() => setSparkles([]), 800); // let fade out finish
   };
 
+  // Touch support for sparkle effect
+  const handleTouchStart = () => {
+    handleMouseEnter();
+  };
+  const handleTouchEnd = () => {
+    handleMouseLeave();
+  };
+
   return (
     <div className="relative inline-block">
       <button
@@ -61,6 +69,8 @@ function SparkleButton({ children, className = '', onClick, ...props }) {
         className={`relative sparkle-btn ${className}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
         onClick={onClick}
         {...props}
       >
