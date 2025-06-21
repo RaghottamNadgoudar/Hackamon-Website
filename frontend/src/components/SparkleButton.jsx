@@ -7,6 +7,7 @@ function getRandomInt(min, max) {
 
 function SparkleButton({ children, className = '', onClick, ...props }) {
   const [sparkles, setSparkles] = useState([]);
+  const [isHovered, setIsHovered] = useState(false);
   const btnRef = useRef();
 
   // Get button dimensions for boundary calculations
@@ -19,11 +20,13 @@ function SparkleButton({ children, className = '', onClick, ...props }) {
   }, []);
 
   const handleMouseEnter = () => {
-    // Generate 3 to 5 sparkles, spaced evenly around the button boundary
+    setIsHovered(true);
+    // Generate 5 sparkles, spaced evenly but with a random rotation offset each time
     const sparkleCount = 5;
+    const baseRotation = Math.random() * 2 * Math.PI; // randomize the starting angle
     const newSparkles = Array.from({ length: sparkleCount }).map((_, i) => {
-      // Evenly space sparkles around the boundary (circle)
-      const angle = (2 * Math.PI * i) / sparkleCount;
+      // Evenly space sparkles around the boundary (circle), but rotate the whole set
+      const angle = baseRotation + (2 * Math.PI * i) / sparkleCount;
       const radius = 18 + Math.random() * 10; // 18-28px from boundary
       // Place on the boundary (ellipse for button shape)
       const x = btnDims.width / 2 + (btnDims.width / 2) * Math.cos(angle);
@@ -45,8 +48,10 @@ function SparkleButton({ children, className = '', onClick, ...props }) {
     setSparkles(newSparkles);
   };
 
-  const handleAnimationEnd = () => {
-    setSparkles([]);
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+    // Don't clear sparkles immediately
+    setTimeout(() => setSparkles([]), 800); // let fade out finish
   };
 
   return (
@@ -55,7 +60,7 @@ function SparkleButton({ children, className = '', onClick, ...props }) {
         ref={btnRef}
         className={`relative sparkle-btn ${className}`}
         onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleAnimationEnd}
+        onMouseLeave={handleMouseLeave}
         onClick={onClick}
         {...props}
       >
@@ -70,7 +75,7 @@ function SparkleButton({ children, className = '', onClick, ...props }) {
             key={sparkleObj.id}
             src={sparkle}
             alt="*"
-            className="sparkle-img"
+            className={`sparkle-img${isHovered ? ' sparkle-animate' : ' sparkle-fade'}`}
             style={{
               top: sparkleObj.startY,
               left: sparkleObj.startX,
@@ -78,12 +83,13 @@ function SparkleButton({ children, className = '', onClick, ...props }) {
               height: '18px',
               marginLeft: '-9px',
               marginTop: '-9px',
-              animation: `sparkle-fly-btn 0.7s cubic-bezier(.5,1.8,.5,1) ${sparkleObj.delay}s both`,
+              animation: isHovered
+                ? `sparkle-fly-btn 1.2s cubic-bezier(.5,1.8,.5,1) ${sparkleObj.delay}s both`
+                : `sparkle-fadeout 0.8s ease` ,
               transform: `scale(${sparkleObj.scale}) rotate(${sparkleObj.rotate}deg)`,
               '--xmove': `${sparkleObj.xMove}px`,
               '--ymove': `${sparkleObj.yMove}px`,
             }}
-            onAnimationEnd={handleAnimationEnd}
           />
         ))}
       </span>

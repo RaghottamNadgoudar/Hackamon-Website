@@ -113,7 +113,7 @@ const LandingPage = () => {
               Download
             </h2>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
-              <button 
+              <SparkleButton
                 onClick={() => downloadPDF(documentation1, 'documentation1.pdf')}
                 className="w-full sm:w-auto px-6 py-3 bg-blue-500 hover:bg-blue-600 text-yellow-100 font-bold text-lg rounded-full shadow-lg transition duration-300 transform hover:scale-105"
               >
@@ -121,8 +121,8 @@ const LandingPage = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
                 Documentation 1
-              </button>
-              <button 
+              </SparkleButton>
+              <SparkleButton
                 onClick={() => downloadPDF(documentation2, 'documentation2.pdf')}
                 className="w-full sm:w-auto px-6 py-3 bg-green-500 hover:bg-green-600 text-yellow-100 font-bold text-lg rounded-full shadow-lg transition duration-300 transform hover:scale-105"
               >
@@ -130,7 +130,7 @@ const LandingPage = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
                 Documentation 2
-              </button>
+              </SparkleButton>
             </div>
           </div>
         </section>
@@ -270,16 +270,16 @@ const LandingPage = () => {
             <h3 className="text-3xl font-bold mb-4">Ready to catch 'em all?</h3>
             <p className="text-xl mb-8">Join PokéHack 2025 and code your way to victory!</p>
             <div className="space-x-4">
-              <button 
+              <SparkleButton
                 className="px-8 py-4 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-xl rounded-full shadow-lg transition duration-300 transform hover:scale-105"
                 onClick={openRegistrationForm}
               >
                 Register Now
-              </button>
+              </SparkleButton>
               <a href="/login">
-                <button className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold text-xl rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                <SparkleButton className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold text-xl rounded-full shadow-lg transition duration-300 transform hover:scale-105">
                   Team Login
-                </button>
+                </SparkleButton>
               </a>
             </div>
           </div>
