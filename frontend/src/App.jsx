@@ -5,6 +5,7 @@ import { AuthProvider } from './context/AuthContext'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 import { FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import SparkleButton from './components/SparkleButton';
+import DownloadDropdownButton from './components/DownloadDropdownButton';
 
 // Public Components
 import Login from './components/Login/Login'
@@ -22,6 +23,8 @@ import lightBackground from './assets/backg.jpg'
 import documentation1 from './assets/documentation1.pdf'
 import documentation2 from './assets/documentation2.pdf'
 import './App.css'
+import RVCELogo from './assets/RVCE_Logo.png';
+import CCLogo from './assets/CClogo.png';
 
 // FadeInSection component for scroll-triggered fade-in
 function FadeInSection({ children }) {
@@ -57,7 +60,7 @@ const LandingPage = () => {
   };
 
   const openRegistrationForm = () => {
-    const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdummy-form-id/viewform";
+    const googleFormUrl = "https://forms.gle/weVbhTUdWhSQSYd78";
     window.open(googleFormUrl, '_blank');
   };
 
@@ -75,9 +78,12 @@ const LandingPage = () => {
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black bg-opacity-20"></div>
       
-      {/* Hero Section with enhanced contrast */}
       <FadeInSection>
-        <section className="relative flex items-center justify-center h-[60vh] sm:h-screen">
+        <section className="relative flex flex-col items-center justify-center h-[60vh] sm:h-screen">
+          <div className="flex flex-row items-center justify-center gap-6 mb-6">
+            <img src={RVCELogo} alt="RVCE Logo" style={{ height: 120, width: 'auto' }} />
+            <img src={CCLogo} alt="CC Logo" style={{ height: 120, width: 'auto' }} />
+          </div>
           <div className="absolute inset-0 "></div>
           <div className="text-center z-10 px-2 sm:px-4">
             <h1 className="poke-title shine text-4xl xs:text-5xl sm:text-6xl md:text-9xl font-extrabold">
@@ -99,31 +105,23 @@ const LandingPage = () => {
       </FadeInSection>
 
       <FadeInSection>
-        {/* Download Section */}
-        <section className='flex flex-col items-center justify-center p-4 sm:p-8'>
-          <div className="text-center w-full max-w-4xl">
-            <h2 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg mb-8">
-              Download
-            </h2>
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
-              <SparkleButton
-                onClick={() => downloadPDF(documentation1, 'documentation1.pdf')}
-                className="w-full sm:w-auto px-6 py-3 bg-blue-500 hover:bg-blue-600 text-yellow-100 font-bold text-lg rounded-full shadow-lg transition duration-300 transform hover:scale-105"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-                Documentation 1
-              </SparkleButton>
-              <SparkleButton
-                onClick={() => downloadPDF(documentation2, 'documentation2.pdf')}
-                className="w-full sm:w-auto px-6 py-3 bg-green-500 hover:bg-green-600 text-yellow-100 font-bold text-lg rounded-full shadow-lg transition duration-300 transform hover:scale-105"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-                Documentation 2
-              </SparkleButton>
+        {/* Why Participate Section */}
+        <section className="mx-auto px-2 sm:px-6 py-10 sm:py-16 max-w-7xl why-participate-section">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-10 text-center text-yellow-300 tracking-tight" style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, display: 'block', margin: '0 auto' }}>
+            Why Participate?
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-dashed flex flex-col transition duration-300 hover:scale-105" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
+              <h3 className="text-2xl font-bold mb-3 text-yellow-300" style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif' }}>Event Overview</h3>
+              <p className="text-white text-lg">Hackémon is a gamified cybersecurity and problem-solving event with a Pokémon twist. Solve challenges, earn badges, and unlock clues to a hidden Pokémon!</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-dashed flex flex-col transition duration-300 hover:scale-105" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
+              <h3 className="text-2xl font-bold mb-3 text-yellow-300" style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif' }}>What You Can Expect</h3>
+              <p className="text-white text-lg">You will face technical challenges in web security, AI/ML, blockchain, data science, and more. Earn badges for each problem solved, discover Pokémon-themed clues to a mystery Pokémon, receive custom participation certificates, and enjoy recognition, learning, and networking opportunities.</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-dashed flex flex-col transition duration-300 hover:scale-105" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
+              <h3 className="text-2xl font-bold mb-3 text-yellow-300" style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif' }}>Perks for Participants</h3>
+              <p className="text-white text-lg">All participants will receive a Pokémon-themed certificate, have a chance to be shortlisted for finals based on performance, gain peer engagement and recognition, and experience a blend of fun and technical learning.</p>
             </div>
           </div>
         </section>
@@ -274,24 +272,16 @@ const LandingPage = () => {
       </FadeInSection>
 
       <FadeInSection>
-        {/* Why Participate Section */}
-        <section className="mx-auto px-2 sm:px-6 py-10 sm:py-16 max-w-7xl why-participate-section">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-10 text-left text-yellow-300 tracking-tight" style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, display: 'inline-block', marginLeft: '1em' }}>
-            Why Participate?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-dashed flex flex-col transition duration-300 hover:scale-105" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-              <h3 className="text-2xl font-bold mb-3 text-yellow-300" style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif' }}>Event Overview</h3>
-              <p className="text-white text-lg">Hackémon is a gamified cybersecurity and problem-solving event with a Pokémon twist. Solve challenges, earn badges, and unlock clues to a hidden Pokémon!</p>
+        {/* Download Section */}
+        <section className='flex flex-row items-center justify-center p-4 sm:p-8 mb-16 relative'>
+          <div className="text-center w-full max-w-4xl">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
+              <DownloadDropdownButton
+                onDownload1={() => downloadPDF(documentation1, 'documentation1.pdf')}
+                onDownload2={() => downloadPDF(documentation2, 'documentation2.pdf')}
+              />
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-dashed flex flex-col transition duration-300 hover:scale-105" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-              <h3 className="text-2xl font-bold mb-3 text-yellow-300" style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif' }}>What You Can Expect</h3>
-              <p className="text-white text-lg">You will face technical challenges in web security, AI/ML, blockchain, data science, and more. Earn badges for each problem solved, discover Pokémon-themed clues to a mystery Pokémon, receive custom participation certificates, and enjoy recognition, learning, and networking opportunities.</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-dashed flex flex-col transition duration-300 hover:scale-105" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-              <h3 className="text-2xl font-bold mb-3 text-yellow-300" style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif' }}>Perks for Participants</h3>
-              <p className="text-white text-lg">All participants will receive a Pokémon-themed certificate, have a chance to be shortlisted for finals based on performance, gain peer engagement and recognition, and experience a blend of fun and technical learning.</p>
-            </div>
+            
           </div>
         </section>
       </FadeInSection>

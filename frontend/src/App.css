@@ -94,25 +94,30 @@
   animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-/* Fully transparent and minimal scrollbar */
+/* Custom Scrollbar Styles */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 32px;
   background: transparent;
 }
-::-webkit-scrollbar-thumb {
-  background: rgba(40,40,40,0.35); /* subtle thumb for usability */
-  border-radius: 8px;
-  border: 2px solid rgba(0,0,0,0.1);
-}
 ::-webkit-scrollbar-track {
-  background: url('/assets/backg.jpg') center center/cover no-repeat fixed;
+  background: transparent;
+  border-radius: 16px;
 }
-
-/* Firefox */
+::-webkit-scrollbar-thumb {
+  background: #facc15; /* yellow-400 */
+  border-radius: 16px;
+  border: 8px solid #23272f;
+  min-height: 48px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #fde047; /* yellow-300 */
+}
+/* For Firefox */
 html {
   scrollbar-width: thin;
-  scrollbar-color: rgba(40,40,40,0.35) transparent;
+  scrollbar-color: #facc15 #23272f;
 }
+
 /* Firefox track background continuation */
 html {
   background: url('/assets/backg.jpg') center center/cover no-repeat fixed;
@@ -297,6 +302,19 @@ section.event-details-section, .event-details-section h2, .event-details-section
     font-size: 10rem;
   }
 }
+@media (max-width: 640px) {
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-width: 3px;
+    min-height: 32px;
+  }
+  .poke-title.shine {
+    -webkit-text-stroke: 1px #3b82f6;
+    font-size: 2.7rem;
+  }
+}
 @keyframes shine {
   0%, 10% {
     background-position: -1000px;
@@ -309,5 +327,60 @@ section.event-details-section, .event-details-section h2, .event-details-section
   }
   100% {
     background-position: 1000px;
+  }
+}
+
+/* Uiverse.io Download Button Styles */
+.uiverse-download-btn.button {
+  padding: 12px 19px;
+  border: none;
+  color: rgb(16, 52, 170);
+  cursor: pointer;
+  background-color: rgb(190, 219, 253);
+  border-radius: 7px;
+  font-weight: bold;
+  transition: 0.5s;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 13px;
+  box-shadow: rgba(150, 143, 143, 0.2) 0px 2px 8px 0px;
+  position: relative;
+  z-index: 10;
+}
+.uiverse-download-btn.button:hover {
+  background-color: rgb(164, 206, 253);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.saveicon {
+  width: 17px;
+}
+.uiverse-dropdown-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #facc15;
+  color: #23272f;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(150,143,143,0.12);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  margin-bottom: 2px;
+  text-align: left;
+}
+.uiverse-dropdown-btn:hover {
+  background: #fde047;
+  color: #1e293b;
+  transform: translateX(4px) scale(1.04);
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+}
+@media (max-width: 640px) {
+  .logo-img {
+    height: 36px;
   }
 }
