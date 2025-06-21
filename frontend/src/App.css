@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Special+Gothic+Expanded+One&display=swap');
+
 @font-face {
   font-family: 'Poke';
   src: url('/fonts/titlefont.ttf') format('truetype');
@@ -117,11 +119,8 @@ html {
 }
 
 /* Use a modern, clean font for cards and main content */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Special+Gothic+Expanded+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Special+Gothic+Expanded+One&display=swap');
 body {
-  font-family: 'Inter', 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family:  'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 /* For card headings and important text */
@@ -153,13 +152,13 @@ li,
   font-family: 'Nunito', Arial, Helvetica, sans-serif;
 }
 .team-card .team-card-title {
-  font-family: 'Special Gothic Expanded One' ;
+  font-family: 'Special Gothic Expanded One', 'Nunito', Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 1.35rem;
   letter-spacing: 0.01em;
 }
 .team-card .team-card-role {
-  font-family: 'Nunito';
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1.05rem;
 }
@@ -225,4 +224,33 @@ li,
     opacity: 0;
     transform: scale(var(--scale, 1.2)) translate(var(--xmove, 0px), var(--ymove, 0px)) rotate(var(--rotate, 0deg));
   }
+}
+
+/* Footer styling */
+footer {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+footer h3, footer p {
+  font-family: 'Special Gothic Expanded One', 'Nunito', Arial, Helvetica, sans-serif !important;
+}
+footer .SparkleButton, footer button, footer a {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif !important;
+}
+
+/* Schedule section styling */
+section.schedule-section, .schedule-section h2, .schedule-section h3, .schedule-section p {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif !important;
+}
+.schedule-section h2 {
+  font-family: 'Special Gothic Expanded One', 'Nunito', Arial, Helvetica, sans-serif !important;
+  font-weight: 800;
+}
+
+/* Event Details section styling */
+section.event-details-section, .event-details-section h2, .event-details-section h3, .event-details-section p {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif !important;
+}
+.event-details-section h2 {
+  font-family: 'Special Gothic Expanded One', 'Nunito', Arial, Helvetica, sans-serif !important;
+  font-weight: 800;
 }

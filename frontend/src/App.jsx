@@ -83,7 +83,7 @@ const LandingPage = () => {
             <h1 className="poke-title text-4xl xs:text-5xl sm:text-6xl md:text-8xl font-extrabold text-white drop-shadow-2xl animate-pulse">
               PokéHack 2025
             </h1>
-            <p className="mt-2 sm:mt-4 text-lg xs:text-xl sm:text-2xl md:text-3xl text-white font-semibold drop-shadow-lg">
+            <p className="mt-2 sm:mt-4 text-lg xs:text-xl sm:text-2xl md:text-3xl text-white font-semibold drop-shadow-lg hero-subtitle" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
               Gotta Code 'Em All!
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -221,24 +221,26 @@ const LandingPage = () => {
 
       <FadeInSection>
         {/* Event Details Section */}
-        <section className="mx-auto px-6 py-16 max-w-6xl">
-          <div className="bg-white/10 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border-2 border-dashed border-white/20">
-            <h2 className="card-title text-5xl font-bold mb-12 text-center text-white drop-shadow-lg">Event Details</h2>
+        <section className="mx-auto px-6 py-16 max-w-6xl event-details-section">
+          <div className="bg-gradient-to-br from-white/5 via-white/10 to-white/0 rounded-3xl shadow-2xl p-8 border border-white/10 backdrop-blur">
+            <h2 className="card-title text-5xl font-bold mb-12 text-center text-white drop-shadow-lg" style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800 }}>
+              Event Details
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white/20 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20 card-body">
+              <div className="bg-white/5 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border border-white/10 card-body" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', backdropFilter: 'blur(3px)' }}>
                 <div className="text-6xl mb-4">📅</div>
-                <h3 className="card-title text-2xl font-bold mb-3 text-white">Date</h3>
-                <p className="card-body text-lg text-gray-200">August 15-17, 2025</p>
+                <h3 className="card-title text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 700 }}>Date</h3>
+                <p className="card-body text-lg text-gray-50" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>August 15-17, 2025</p>
               </div>
-              <div className="bg-white/20 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20 card-body">
+              <div className="bg-white/5 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border border-white/10 card-body" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', backdropFilter: 'blur(3px)' }}>
                 <div className="text-6xl mb-4">📍</div>
-                <h3 className="card-title text-2xl font-bold mb-3 text-white">Venue</h3>
-                <p className="card-body text-lg text-gray-200">College Auditorium</p>
+                <h3 className="card-title text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 700 }}>Venue</h3>
+                <p className="card-body text-lg text-gray-50" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>College Auditorium</p>
               </div>
-              <div className="bg-white/20 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20 card-body">
+              <div className="bg-white/5 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border border-white/10 card-body" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', backdropFilter: 'blur(3px)' }}>
                 <div className="text-6xl mb-4">🏆</div>
-                <h3 className="card-title text-2xl font-bold mb-3 text-white">Prizes</h3>
-                <p className="card-body text-lg text-gray-200">₹50,000 + Gadgets</p>
+                <h3 className="card-title text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 700 }}>Prizes</h3>
+                <p className="card-body text-lg text-gray-50" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>₹50,000 + Gadgets</p>
               </div>
             </div>
           </div>
@@ -247,38 +249,40 @@ const LandingPage = () => {
 
       <FadeInSection>
         {/* Modern Schedule Card Section - Remade */}
-        <section className="mx-auto px-2 sm:px-6 py-10 sm:py-16 max-w-2xl">
-          <div className="rounded-3xl shadow-2xl p-4 sm:p-8 border-2 border-dashed border-white/20 bg-gradient-to-br from-white/10 via-white/20 to-white/5 backdrop-blur-2xl">
-            <h2 className="card-title text-4xl sm:text-5xl font-bold mb-10 text-center text-white drop-shadow-lg tracking-tight">Schedule</h2>
+        <section className="mx-auto px-2 sm:px-6 py-10 sm:py-16 max-w-2xl schedule-section">
+          <div className="bg-gradient-to-br from-white/5 via-white/10 to-white/0 rounded-3xl shadow-2xl p-4 sm:p-8 border border-white/10 backdrop-blur">
+            <h2 className="card-title text-4xl sm:text-5xl font-bold mb-10 text-center text-white drop-shadow-lg tracking-tight" style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800 }}>
+              Schedule
+            </h2>
             <div className="flex flex-col gap-6">
               {/* Schedule Item 1 */}
-              <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-6 border border-dashed border-white/30 backdrop-blur-2xl bg-opacity-70 transition hover:scale-[1.03]">
+              <div className="flex items-center gap-4 bg-white/5 rounded-2xl shadow-xl p-6 border border-white/10 backdrop-blur transition hover:scale-[1.03]" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', backdropFilter: 'blur(2px)' }}>
                 <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full bg-yellow-400 text-gray-900 text-2xl shadow-lg">
                   <FaCalendarAlt />
                 </div>
                 <div className="flex-1">
-                  <h3 className="card-title text-xl sm:text-2xl font-bold text-white leading-tight mb-1">Registration Opens</h3>
-                  <p className="card-body text-base sm:text-lg text-gray-200">June 1, 2025</p>
+                  <h3 className="card-title text-xl sm:text-2xl font-bold text-white leading-tight mb-1" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 700 }}>Registration Opens</h3>
+                  <p className="card-body text-base sm:text-lg text-gray-50" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>June 1, 2025</p>
                 </div>
               </div>
               {/* Schedule Item 2 */}
-              <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-6 border border-dashed border-white/30 backdrop-blur-2xl bg-opacity-70 transition hover:scale-[1.03]">
+              <div className="flex items-center gap-4 bg-white/5 rounded-2xl shadow-xl p-6 border border-white/10 backdrop-blur transition hover:scale-[1.03]" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', backdropFilter: 'blur(2px)' }}>
                 <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full bg-pink-500 text-white text-2xl shadow-lg">
                   <FaMapMarkerAlt />
                 </div>
                 <div className="flex-1">
-                  <h3 className="card-title text-xl sm:text-2xl font-bold text-white leading-tight mb-1">Hackathon Days</h3>
-                  <p className="card-body text-base sm:text-lg text-gray-200">August 15-17, 2025</p>
+                  <h3 className="card-title text-xl sm:text-2xl font-bold text-white leading-tight mb-1" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 700 }}>Hackathon Days</h3>
+                  <p className="card-body text-base sm:text-lg text-gray-50" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>August 15-17, 2025</p>
                 </div>
               </div>
               {/* Schedule Item 3 */}
-              <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-6 border border-dashed border-white/30 backdrop-blur-2xl bg-opacity-70 transition hover:scale-[1.03]">
+              <div className="flex items-center gap-4 bg-white/5 rounded-2xl shadow-xl p-6 border border-white/10 backdrop-blur transition hover:scale-[1.03]" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', backdropFilter: 'blur(2px)' }}>
                 <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full bg-blue-500 text-white text-2xl shadow-lg">
                   <FaTrophy />
                 </div>
                 <div className="flex-1">
-                  <h3 className="card-title text-xl sm:text-2xl font-bold text-white leading-tight mb-1">Awards Ceremony</h3>
-                  <p className="card-body text-base sm:text-lg text-gray-200">August 17, 2025</p>
+                  <h3 className="card-title text-xl sm:text-2xl font-bold text-white leading-tight mb-1" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 700 }}>Awards Ceremony</h3>
+                  <p className="card-body text-base sm:text-lg text-gray-50" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>August 17, 2025</p>
                 </div>
               </div>
             </div>
