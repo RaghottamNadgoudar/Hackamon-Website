@@ -84,13 +84,6 @@ Hackamon-Website/
 
 Found a typo? Want to add a new Poké-flair?
 Open a pull request or raise an issue—let’s make this landing page as welcoming as a Pokémon Center!
-
----
-
-## 🧑‍🏫 Contact the Gym Leaders
-
-For questions, reach out to the organizing team at [your-email@example.com] or via our [Discord server](#).
-
 ---
 
 ## ⚡ License
