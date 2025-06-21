@@ -4,6 +4,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 import { FaCalendarAlt, FaTrophy, FaMapMarkerAlt } from 'react-icons/fa';
+import SparkleButton from './components/SparkleButton';
 
 // Public Components
 import Login from './components/Login/Login'
@@ -86,16 +87,18 @@ const LandingPage = () => {
               Gotta Code 'Em All!
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <button 
-                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg sm:text-xl rounded-full shadow-2xl transition duration-300 transform hover:scale-105" 
+              <SparkleButton
+                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg sm:text-xl rounded-full shadow-2xl transition duration-300 transform hover:scale-105"
                 onClick={openRegistrationForm}
               >
                 Register Now
-              </button>
+              </SparkleButton>
               <a href="/login" className="w-full sm:w-auto">
-                <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold text-lg sm:text-xl rounded-full shadow-2xl transition duration-300 transform hover:scale-105">
+                <SparkleButton
+                  className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold text-lg sm:text-xl rounded-full shadow-2xl transition duration-300 transform hover:scale-105"
+                >
                   Team Login
-                </button>
+                </SparkleButton>
               </a>
             </div>
           </div>
