@@ -81,8 +81,8 @@ const LandingPage = () => {
       <FadeInSection>
         <section className="relative flex flex-col items-center justify-center h-[60vh] sm:h-screen">
           <div className="flex flex-row items-center justify-center gap-6 mb-6">
-            <img src={RVCELogo} alt="RVCE Logo" style={{ height: 120, width: 'auto' }} />
-            <img src={CCLogo} alt="CC Logo" style={{ height: 120, width: 'auto' }} />
+            <img src={RVCELogo} alt="RVCE Logo" className="logo-img" />
+            <img src={CCLogo} alt="CC Logo" className="logo-img" />
           </div>
           <div className="absolute inset-0 "></div>
           <div className="text-center z-10 px-2 sm:px-4">
@@ -133,69 +133,76 @@ const LandingPage = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-yellow-300 drop-shadow-lg text-center" style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif' }}>
             Our Team
           </h2>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 w-full max-w-7xl px-4'>
-            {/* Team Member 1 */}
-            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 transform hover:scale-105 transition duration-300 border-2 border-dashed" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-              <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '2rem' }}>
-                Sumukha Upadhaya
+          <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl px-4'>
+            {/* Faculty Advisor 1 */}
+            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-dashed hover:scale-105 transition duration-300" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
+              <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '1.5rem' }}>
+                Dr. Padmashree T
               </h3>
               <p className='team-card-role text-white text-center text-sm mb-2' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 600 }}>
-                Lead Developer
-              </p>
-              <p className='team-card-desc text-xs text-white text-center' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 400 }}>
-                Full-stack development and project coordination
+                Associate Professor & Associate Dean-PG Studies, ISE<br/>Faculty Advisor for the Coding Club
               </p>
             </div>
-
-            {/* Team Member 2 */}
-            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 transform hover:scale-105 transition duration-300 border-2 border-dashed" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-              <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '2rem' }}>
-                GDL Pranav
+            {/* Faculty Advisor 2 */}
+            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-dashed hover:scale-105 transition duration-300" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
+              <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '1.5rem' }}>
+                Dr. Sagar BM
               </h3>
               <p className='team-card-role text-white text-center text-sm mb-2' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 600 }}>
-                Frontend Developer
-              </p>
-              <p className='team-card-desc text-xs text-white text-center' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 400 }}>
-                UI/UX design and React development
+                Dean Student Affairs<br/>Faculty Advisor for the Coding Club
               </p>
             </div>
-
-            {/* Team Member 3 */}
-            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 transform hover:scale-105 transition duration-300 border-2 border-dashed" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-              <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '2rem' }}>
-                Snehal Reddy
+            {/* Student 1 */}
+            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-dashed hover:scale-105 transition duration-300" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
+              <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '1.5rem' }}>
+                Sumukha Upadhyaya
               </h3>
               <p className='team-card-role text-white text-center text-sm mb-2' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 600 }}>
-                Backend Developer
-              </p>
-              <p className='team-card-desc text-xs text-white text-center' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 400 }}>
-                API development and database management
+                ISE
               </p>
             </div>
-
-            {/* Team Member 4 */}
-            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 transform hover:scale-105 transition duration-300 border-2 border-dashed" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-              <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '2rem' }}>
-                Sukruth Kuber
+            {/* Student 2 */}
+            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-dashed hover:scale-105 transition duration-300" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
+              <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '1.5rem' }}>
+                Raghottam Nadgoudar
               </h3>
               <p className='team-card-role text-white text-center text-sm mb-2' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 600 }}>
-                DevOps Engineer
-              </p>
-              <p className='team-card-desc text-xs text-white text-center' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 400 }}>
-                Deployment and infrastructure management
+                CSE
               </p>
             </div>
-
-            {/* Team Member 5 */}
-            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 transform hover:scale-105 transition duration-300 border-2 border-dashed" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-              <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '2rem' }}>
-                Raghottam N
+            {/* Student 3 */}
+            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-dashed hover:scale-105 transition duration-300" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
+              <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '1.5rem' }}>
+                Shubhang Kuber
               </h3>
               <p className='team-card-role text-white text-center text-sm mb-2' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 600 }}>
-                QA Engineer
+                ISE
               </p>
-              <p className='team-card-desc text-xs text-white text-center' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 400 }}>
-                Testing and quality assurance
+            </div>
+            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-dashed hover:scale-105 transition duration-300" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
+              <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '1.5rem' }}>
+                G.D.Pranav.L
+              </h3>
+              <p className='team-card-role text-white text-center text-sm mb-2' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 600 }}>
+                ME
+              </p>
+            </div>
+            {/* Student 4 */}
+            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-dashed hover:scale-105 transition duration-300" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
+              <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '1.5rem' }}>
+                Mantradi Shashwati Rao
+              </h3>
+              <p className='team-card-role text-white text-center text-sm mb-2' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 600 }}>
+                CSE
+              </p>
+            </div>
+            {/* Student 5 */}
+            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-dashed hover:scale-105 transition duration-300" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
+              <h3 className='team-card-title text-yellow-300 text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800, fontSize: '1.5rem' }}>
+                Snehal Reddy Thadigotla
+              </h3>
+              <p className='team-card-role text-white text-center text-sm mb-2' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 600 }}>
+                ISE
               </p>
             </div>
           </div>
