@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
+import { FaCalendarAlt, FaTrophy, FaMapMarkerAlt } from 'react-icons/fa';
 
 // Public Components
 import Login from './components/Login/Login'
@@ -196,22 +197,22 @@ const LandingPage = () => {
         {/* Event Details Section */}
         <section className="mx-auto px-6 py-16 max-w-6xl">
           <div className="bg-white/10 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border-2 border-dashed border-white/20">
-            <h2 className="text-5xl font-bold mb-12 text-center text-white drop-shadow-lg">Event Details</h2>
+            <h2 className="card-title text-5xl font-bold mb-12 text-center text-white drop-shadow-lg">Event Details</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white/20 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20">
+              <div className="bg-white/20 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20 card-body">
                 <div className="text-6xl mb-4">📅</div>
-                <h3 className="text-2xl font-bold mb-3 text-white">Date</h3>
-                <p className="text-lg text-gray-200">August 15-17, 2025</p>
+                <h3 className="card-title text-2xl font-bold mb-3 text-white">Date</h3>
+                <p className="card-body text-lg text-gray-200">August 15-17, 2025</p>
               </div>
-              <div className="bg-white/20 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20">
+              <div className="bg-white/20 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20 card-body">
                 <div className="text-6xl mb-4">📍</div>
-                <h3 className="text-2xl font-bold mb-3 text-white">Venue</h3>
-                <p className="text-lg text-gray-200">College Auditorium</p>
+                <h3 className="card-title text-2xl font-bold mb-3 text-white">Venue</h3>
+                <p className="card-body text-lg text-gray-200">College Auditorium</p>
               </div>
-              <div className="bg-white/20 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20">
+              <div className="bg-white/20 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20 card-body">
                 <div className="text-6xl mb-4">🏆</div>
-                <h3 className="text-2xl font-bold mb-3 text-white">Prizes</h3>
-                <p className="text-lg text-gray-200">₹50,000 + Gadgets</p>
+                <h3 className="card-title text-2xl font-bold mb-3 text-white">Prizes</h3>
+                <p className="card-body text-lg text-gray-200">₹50,000 + Gadgets</p>
               </div>
             </div>
           </div>
@@ -219,33 +220,39 @@ const LandingPage = () => {
       </FadeInSection>
 
       <FadeInSection>
-        {/* Timeline Section - New Mobile Friendly Card */}
+        {/* Modern Schedule Card Section - Remade */}
         <section className="mx-auto px-2 sm:px-6 py-10 sm:py-16 max-w-2xl">
-          <div className="bg-white/10 backdrop-blur-sm rounded-3xl shadow-2xl p-4 sm:p-8 border-2 border-dashed border-white/20">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-8 text-center text-white drop-shadow-lg">Schedule</h2>
+          <div className="rounded-3xl shadow-2xl p-4 sm:p-8 border-2 border-dashed border-white/20 bg-gradient-to-br from-white/10 via-white/20 to-white/5 backdrop-blur-2xl">
+            <h2 className="card-title text-4xl sm:text-5xl font-bold mb-10 text-center text-white drop-shadow-lg tracking-tight">Schedule</h2>
             <div className="flex flex-col gap-6">
-             
-              <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-4 sm:p-6 border border-white/20 transition hover:scale-[1.02]">
-                <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full bg-yellow-400 text-gray-900 font-bold text-lg sm:text-xl">1</div>
+              {/* Schedule Item 1 */}
+              <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-6 border border-dashed border-white/30 backdrop-blur-xl transition hover:scale-[1.03]">
+                <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full bg-yellow-400 text-gray-900 text-2xl shadow-lg">
+                  <FaCalendarAlt />
+                </div>
                 <div className="flex-1">
-                  <h3 className="text-lg sm:text-2xl font-bold text-white leading-tight">Registration Opens</h3>
-                  <p className="text-sm sm:text-lg text-gray-200">June 1, 2025</p>
+                  <h3 className="card-title text-xl sm:text-2xl font-bold text-white leading-tight mb-1">Registration Opens</h3>
+                  <p className="card-body text-base sm:text-lg text-gray-200">June 1, 2025</p>
                 </div>
               </div>
-              {/* Card 2 */}
-              <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-4 sm:p-6 border border-white/20 transition hover:scale-[1.02]">
-                <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full bg-pink-500 text-white font-bold text-lg sm:text-xl">2</div>
+              {/* Schedule Item 2 */}
+              <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-6 border border-dashed border-white/30 backdrop-blur-xl transition hover:scale-[1.03]">
+                <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full bg-pink-500 text-white text-2xl shadow-lg">
+                  <FaMapMarkerAlt />
+                </div>
                 <div className="flex-1">
-                  <h3 className="text-lg sm:text-2xl font-bold text-white leading-tight">Hackathon Days</h3>
-                  <p className="text-sm sm:text-lg text-gray-200">August 15-17, 2025</p>
+                  <h3 className="card-title text-xl sm:text-2xl font-bold text-white leading-tight mb-1">Hackathon Days</h3>
+                  <p className="card-body text-base sm:text-lg text-gray-200">August 15-17, 2025</p>
                 </div>
               </div>
-              {/* Card 3 */}
-              <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-4 sm:p-6 border border-white/20 transition hover:scale-[1.02]">
-                <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full bg-blue-500 text-white font-bold text-lg sm:text-xl">3</div>
+              {/* Schedule Item 3 */}
+              <div className="flex items-center gap-4 bg-white/20 rounded-2xl shadow-xl p-6 border border-dashed border-white/30 backdrop-blur-xl transition hover:scale-[1.03]">
+                <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full bg-blue-500 text-white text-2xl shadow-lg">
+                  <FaTrophy />
+                </div>
                 <div className="flex-1">
-                  <h3 className="text-lg sm:text-2xl font-bold text-white leading-tight">Awards Ceremony</h3>
-                  <p className="text-sm sm:text-lg text-gray-200">August 17, 2025</p>
+                  <h3 className="card-title text-xl sm:text-2xl font-bold text-white leading-tight mb-1">Awards Ceremony</h3>
+                  <p className="card-body text-base sm:text-lg text-gray-200">August 17, 2025</p>
                 </div>
               </div>
             </div>
