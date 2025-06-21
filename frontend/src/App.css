@@ -118,7 +118,8 @@ html {
 
 /* Use a modern, clean font for cards and main content */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Special+Gothic+Expanded+One&display=swap');
 body {
   font-family: 'Inter', 'Montserrat', Arial, Helvetica, sans-serif;
 }
@@ -130,7 +131,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', 'Inter', Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', 'Inter', Arial, Helvetica, sans-serif;
   font-weight: 700;
   letter-spacing: 0.01em;
 }
@@ -145,6 +146,27 @@ li,
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-weight: 400;
   letter-spacing: 0.01em;
+}
+
+/* For team cards only */
+.team-card {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+.team-card .team-card-title {
+  font-family: 'Special Gothic Expanded One' ;
+  font-weight: 800;
+  font-size: 1.35rem;
+  letter-spacing: 0.01em;
+}
+.team-card .team-card-role {
+  font-family: 'Nunito';
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.team-card .team-card-desc {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
 }
 
 .sparkle-btn {

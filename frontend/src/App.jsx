@@ -67,7 +67,7 @@ const LandingPage = () => {
       style={{
         backgroundImage: `url(${lightBackground})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center bottom', // push background image higher
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed'
       }}
@@ -93,13 +93,6 @@ const LandingPage = () => {
               >
                 Register Now
               </SparkleButton>
-              <a href="/login" className="w-full sm:w-auto">
-                <SparkleButton
-                  className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold text-lg sm:text-xl rounded-full shadow-2xl transition duration-300 transform hover:scale-105"
-                >
-                  Team Login
-                </SparkleButton>
-              </a>
             </div>
           </div>
         </section>
@@ -144,53 +137,83 @@ const LandingPage = () => {
           </h2>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 w-full max-w-7xl px-4'>
             {/* Team Member 1 */}
-            <div className='bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl p-6 transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20'>
+            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl p-6 transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
               <div className='w-20 h-20 bg-yellow-400 rounded-full mx-auto mb-4 flex items-center justify-center'>
                 <span className='text-2xl'>⚡</span>
               </div>
-              <h3 className='text-lg font-bold text-white text-center mb-1.5'>Sumukha Upadhaya</h3>
-              <p className='text-gray-200 text-center text-sm mb-2'>Lead Developer</p>
-              <p className='text-xs text-gray-300 text-center'>Full-stack development and project coordination</p>
+              <h3 className='team-card-title text-white text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800 }}>
+                Sumukha Upadhaya
+              </h3>
+              <p className='team-card-role text-gray-200 text-center text-sm mb-2' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 600 }}>
+                Lead Developer
+              </p>
+              <p className='team-card-desc text-xs text-gray-300 text-center' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 400 }}>
+                Full-stack development and project coordination
+              </p>
             </div>
 
             {/* Team Member 2 */}
-            <div className='bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl p-6 transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20'>
+            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl p-6 transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
               <div className='w-20 h-20 bg-pink-500 rounded-full mx-auto mb-4 flex items-center justify-center'>
                 <span className='text-2xl'>🔥</span>
               </div>
-              <h3 className='text-lg font-bold text-white text-center mb-1.5'>GDL Pranav</h3>
-              <p className='text-gray-200 text-center text-sm mb-2'>Frontend Developer</p>
-              <p className='text-xs text-gray-300 text-center'>UI/UX design and React development</p>
+              <h3 className='team-card-title text-white text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800 }}>
+                GDL Pranav
+              </h3>
+              <p className='team-card-role text-gray-200 text-center text-sm mb-2' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 600 }}>
+                Frontend Developer
+              </p>
+              <p className='team-card-desc text-xs text-gray-300 text-center' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 400 }}>
+                UI/UX design and React development
+              </p>
             </div>
 
             {/* Team Member 3 */}
-            <div className='bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl p-6 transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20'>
+            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl p-6 transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
               <div className='w-20 h-20 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center'>
                 <span className='text-2xl'>💧</span>
               </div>
-              <h3 className='text-lg font-bold text-white text-center mb-1.5'>Snehal Reddy</h3>
-              <p className='text-gray-200 text-center text-sm mb-2'>Backend Developer</p>
-              <p className='text-xs text-gray-300 text-center'>API development and database management</p>
+              <h3 className='team-card-title text-white text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800 }}>
+                Snehal Reddy
+              </h3>
+              <p className='team-card-role text-gray-200 text-center text-sm mb-2' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 600 }}>
+                Backend Developer
+              </p>
+              <p className='team-card-desc text-xs text-gray-300 text-center' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 400 }}>
+                API development and database management
+              </p>
             </div>
 
             {/* Team Member 4 */}
-            <div className='bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl p-6 transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20'>
+            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl p-6 transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
               <div className='w-20 h-20 bg-green-500 rounded-full mx-auto mb-4 flex items-center justify-center'>
                 <span className='text-2xl'>🌿</span>
               </div>
-              <h3 className='text-lg font-bold text-white text-center mb-1.5'>Sukruth Kuber</h3>
-              <p className='text-gray-200 text-center text-sm mb-2'>DevOps Engineer</p>
-              <p className='text-xs text-gray-300 text-center'>Deployment and infrastructure management</p>
+              <h3 className='team-card-title text-white text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800 }}>
+                Sukruth Kuber
+              </h3>
+              <p className='team-card-role text-gray-200 text-center text-sm mb-2' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 600 }}>
+                DevOps Engineer
+              </p>
+              <p className='team-card-desc text-xs text-gray-300 text-center' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 400 }}>
+                Deployment and infrastructure management
+              </p>
             </div>
 
             {/* Team Member 5 */}
-            <div className='bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl p-6 transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20'>
+            <div className="team-card bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl p-6 transform hover:scale-105 transition duration-300 border-2 border-dashed border-white/20" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
               <div className='w-20 h-20 bg-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center'>
                 <span className='text-2xl'>🔮</span>
               </div>
-              <h3 className='text-lg font-bold text-white text-center mb-1.5'>Raghottam N</h3>
-              <p className='text-gray-200 text-center text-sm mb-2'>QA Engineer</p>
-              <p className='text-xs text-gray-300 text-center'>Testing and quality assurance</p>
+              <h3 className='team-card-title text-white text-center mb-1.5' style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800 }}>
+                Raghottam N
+              </h3>
+              <p className='team-card-role text-gray-200 text-center text-sm mb-2' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 600 }}>
+                QA Engineer
+              </p>
+              <p className='team-card-desc text-xs text-gray-300 text-center' style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 400 }}>
+                Testing and quality assurance
+              </p>
             </div>
           </div>
         </section>
@@ -269,18 +292,13 @@ const LandingPage = () => {
           <div className="mx-auto px-6 text-center">
             <h3 className="text-3xl font-bold mb-4">Ready to catch 'em all?</h3>
             <p className="text-xl mb-8">Join PokéHack 2025 and code your way to victory!</p>
-            <div className="space-x-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
               <SparkleButton
                 className="px-8 py-4 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-xl rounded-full shadow-lg transition duration-300 transform hover:scale-105"
                 onClick={openRegistrationForm}
               >
                 Register Now
               </SparkleButton>
-              <a href="/login">
-                <SparkleButton className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold text-xl rounded-full shadow-lg transition duration-300 transform hover:scale-105">
-                  Team Login
-                </SparkleButton>
-              </a>
             </div>
           </div>
         </footer>
